@@ -1,0 +1,53 @@
+<!--Names: Sydney Taylor, Kenton Carrier-->
+<!DOCTYPE html>
+<html>
+<!--Add a header for the whole page and a smaller header for the first form-->
+<header>
+	<h1>General Conversion Converter</h1>
+	<h2>Convert!</h2>
+</header>
+<body>
+        <form action="universal.cgi" method="GET">
+	<!--Create a table for the form-->
+	<table>
+	    <!--Add headers to the table columns-->
+	    <tr>
+		<th>Units In:</th>
+		<th>Units Out:</th>
+		<th>Amount:</th>
+		<th>Action</th>
+	    </tr>
+	    <!--Define data cells for the table columns-->
+	    <tr>
+		<td><input type="text" name="myin"></td>
+		<td><input type="text" name="myout"></td>
+		<td><input type="number" step="any" name="inamount"></td>
+		<th><input type="submit" name="submit1" value="Make it so"></td>
+	    </tr>
+	</table>
+	</form>
+</body>
+<!--Add a smaller header for the second form-->
+<header>
+        <h2>Is there a path?</h2>
+</header>
+<body>
+        <form action="universal.cgi" method="GET">
+	<!--Create a table for the form-->
+        <table>
+	    <!--Add headers to the table columns-->
+            <tr>
+                <th>Units In:</th>
+                <th>Units Out:</th>
+                <th>Path?</th>
+            </tr>
+	    <!--Define data cells for the table columns-->
+            <tr>
+                <td><input type="text" name="maybein"></td>
+                <td><input type="text" name="maybeout"></td>
+                <th><input type="submit" name="submit2" value="Is path?"></td>
+            </tr>
+        </table>
+        </form>
+</body>
+</html>
